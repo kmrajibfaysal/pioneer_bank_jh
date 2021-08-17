@@ -4,25 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Pioneer Bank Ltd.</title>
   </head>
   <body>
+    <section id="login-area">
+      <h1 class="text-center">Welcome to Pioneer Bank</h1>
+      <div class="submit-area">
+        <h4>Login</h4>
+        <input type="email" class="form-control" placeholder="Email" />
+        <br />
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+        /><br />
+        <button id="login" class="btn btn-success">Enter</button>
+      </div>
+    </section>
 
+    <section id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposit status">
+            <h5>Deposit</h5>
+            <h2>$00</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw status">
+            <h5>Withdraw</h5>
+            <h2>$00</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance status">
+            <h5>Balance</h5>
+            <h2>$1240</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Deposit</h4>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="$ amount you want to deposit"
+            />
+            <br /><button class="btn btn-success">Deposit</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Withdraw</h4>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="$ amount you want to withdraw"
+            />
+            <br /><button class="btn btn-success">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="bootstrap.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
